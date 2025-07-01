@@ -21,13 +21,12 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
-
 Данный проект написан на Nest.js c применением mongoose.В качестве базы данных выбрано mongo.db.
 Для работы приложения необходим файл .env с ключами SALT,JWT_SECRET,TELEGRAM_TOKEN,CHAT_ID
 Приложение может создавать юзера,для возможности создания юзера только с ролью user достаточно ракоментировать декоратор Transform в create-users.dto
 Так же можно создать запись в номер отеля,отменять,изменять запись.При удаление или создание записи придет сообщение в телеграм чат,который вы укажите в .env
 В приложение учтены роли,действия по созданию комнат,удалению и т.д доступны только админу
+Для админа доступна функция просмотра сколько раз заказывали данный номер в выбранном месяце(сделано с помощью агрегации) schedule/getStatisticsByMonth?month=[0...11]
 
 ## Project setup
 
